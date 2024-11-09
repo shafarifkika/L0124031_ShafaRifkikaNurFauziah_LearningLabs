@@ -1,0 +1,51 @@
+Nama		: Shafa Rifkika Nur Fauziah
+NIM		: L0124031
+Prodi		: S1 Informatika
+Tahun		: 2024
+
+Projek Learning Labs Front End
+
+Disini saya membuat web yang bertema yaitu tentang kisah saya.
+
+Web yang saya ambil berjudul "QISATI".
+Qisati diambil dari Bahasa Arab yang berarti "kisah ku", selain itu juga memiliki arti yaitu adil /keadilan. 
+Jadi dari web ini saya menggunakan html, css, dan java script.
+dari html saya membuat 
+1. index.html
+   indext.html berisikan tampilan Utama web saya setelah mengklik link apabila sudah di upload. Saya menggunakan ul li untuk  mengisi apa saja yang ingin saya masukan dalam web. Disini saya mengisi ul li dengan HOME, CONTENT, FEEDBACK, ABOUT ME. Sesuai dengan ketentuan yang telah ditetapkan yaitu membutuhkan index.html,content.html,feedback.htnl, css,  javascript, dan image.
+2. content.html
+   Di content saya memasukan pilihan puisi dan cerita pendek, dimana kedua pilihan tersebut dapat di klik oleh pengguna. Tidak hanya itu tetapi juga terdapat pilihan yang ada pada index agar memudahkan pengguna untuk memilih pilihan lain yang berada pada halaman Utama ataupun yang lainnya.
+3. puisi.html 1 2 3 dst dan cerita pendek (story.html 1 2 3 dst)
+   Ini digunakan untuk mengisi content puisi dan cerita pendek, di dalamnya juga di letakkan foto. Nama file foto adalaha "Di Lema"
+4. Image
+5. feedback.html
+   feedback ini sebenarnya digunakan untuk pengguna memberikan tanggapan/komen/berbagi cerita. Shayanna karena belum sampai materi PHP dll, jadi komen belum bisa di balas. Dalam sini di modifikasi dengan menu nama, email, dan isi dari feedback yang ingin disampaikan.
+6. style.css
+   Style.css ini berguna untuk menghias dari html. CSS benar-benar memperbaiki tampilan dari sederhana menajdi laur biasa. element yang saya gunakan bermacam-macam. Terdapat margin, padding, background, width, height, display, align, color dll.
+7. About me 
+   About me memberikan sekilas biodata tentang saya, pada about me juga terdapat instgram saya, sehingga boleh banget DM (tapi jelas).
+
+
+Kesusahan : Masih sering liat tutor karena materi kadang ga masuk dan belum paham.
+Kelebihan : Lebih mengenal IT terutama Front End,
+	    Merasa diperhatikan,
+            Dapat teman baru.
+
+Meskipun web saya masih sangat sederhana, saya berterimakasih atas Ilmunya dan waktunya karena sudah mau berbagi ilmu. Semoga ilmu yang disampaikan menajdi anal jariyah untuk mas nya aamiin.
+
+Maaf apabila masih banyak kekurangan dan kesalahan.
+Mohon diterima, terimakasih.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
