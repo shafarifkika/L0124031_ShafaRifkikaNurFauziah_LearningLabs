@@ -1,0 +1,404 @@
+*,
+html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #E6F4EA;
+    font-family: Arial, sans-serif;
+    color: #333;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Navbar */
+.container-navbar {
+    background-color: #A8D5BA;
+    width: 100%;
+    height: 10vh;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.ul-navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.li-navbar {
+    padding: 10px 20px;
+    margin: 0 10px;
+    color: #FFFFFF;
+    background-color: #78C2A5;
+    border-radius: 8px;
+    border: 1px solid #8CB396;
+    transition: background-color 0.3s, transform 0.2s;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.li-navbar:hover {
+    background-color: #66B399;
+    transform: scale(1.05);
+}
+
+/* Konten */
+.container-content, .container-feedback {
+    background-color: #EAF7EF;
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px;
+    flex-grow: 1;
+    height: auto;
+    text-align: center;
+}
+
+/* Ukuran gambar pada pilihan puisi dan cerita pendek di content.html */
+.puisi-box img,
+.cerita-box img {
+    max-width: 30%; /* Sama seperti ukuran gambar di halaman utama */
+    height: auto;
+    border: 3px solid #A8D5BA;
+    border-radius: 12px;
+    display: block;
+    margin: 0 auto; /* Menempatkan gambar di tengah */
+}
+
+/* Styling puisi dan cerita box */
+.puisi-box,
+.cerita-box {
+    text-align: center;
+    margin: 10px;
+    text-decoration: none;
+    color: #333;
+}
+
+.puisi-box h2,
+.cerita-box h2 {
+    margin-top: 8px;
+    font-size: 1.2em;
+    color: #333;
+}
+
+
+/*Countent-selektion*/
+.content-selection {
+    margin-bottom: 20px;
+    margin: 20px 0;
+}
+.content-selection button {
+    padding: 10px 20px;
+    background-color: #78C2A5;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font: size 1em;
+    margin: 10px;
+    border-radius: 5px;
+    transition: 0.3s;
+    font-size: 1.1em;
+    transition : background-color 0.3s;
+    margin: 0 10px;
+}
+.content-selection button:hover {
+    background-color: #66B399;
+}
+
+/* Kotak Pilihan Puisi*/
+.poetry-selection {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.poetry-box {
+    background-color: #A8D5BA;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.3s;
+    width: 200px;
+    text-align: center;
+}
+
+.poetry-box:hover {
+    transform: scale(1.05);
+}
+
+.poetry-detail {
+    background-color: #EAF7EF;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 8px;
+    display: none;
+}
+
+/* Kotak Pilihan Cerita Pendek */
+/* Gaya untuk Kotak Puisi dan Cerita Pendek */
+.poetry-list, .story-list {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.poem-box, .story-box {
+    text-align: center;
+    width: 200px;
+    border: 2px solid #A8D5BA;
+    border-radius: 8px;
+    padding: 10px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    text-decoration: none;
+    color: inherit;
+}
+
+.poem-box img, .story-box img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.poem-box:hover, .story-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.short-story-box {
+    background-color: #A8D5BA;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.3s;
+    width: 300px;
+    text-align: center;
+    margin: auto;
+}
+
+.short-story-box:hover {
+    transform: scale(1.05);
+}
+
+.short-story-detail {
+    background-color: #EAF7EF;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 8px;
+    display: none;
+}
+
+.content-text {
+    max-width: 800px;
+    margin-top: 20px;
+    text-align: left;
+}
+
+.img-content {
+    max-width: 30%;
+    height: auto;
+    border: 3px solid #A8D5BA;
+    border-radius: 12px;
+    display: block;
+    margin-right: 20px;
+}
+
+/* Jarak antar-bait di halaman puisi */
+.bait {
+    margin-bottom: 48px; /* 3 baris atau sekitar 3 enter */
+    text-align: justify; /* Rata kanan-kiri */
+}
+
+/* Styling untuk teks cerita pendek */
+.content-text {
+    max-width: 100%; /* Membuat teks menggunakan seluruh lebar layar */
+    margin: 0 auto; /* Menjaga konten tetap terpusat */
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    color: #333;
+    line-height: 1.8;
+    text-align: justify; /* Membuat teks rata kanan kiri */
+}
+
+/* Menambahkan beberapa gaya untuk margin dan padding */
+.cerita-box {
+    display: block;
+    margin-bottom: 30px;
+}
+
+/* Menyesuaikan lebar gambar cerita pendek jika ada */
+.cerita-image img {
+    width: 100%; /* Menyesuaikan ukuran gambar dengan lebar konten */
+    max-width: 600px; /* Batasan ukuran maksimal gambar */
+    display: block;
+    margin: 0 auto;
+}
+
+
+
+/* Gaya untuk judul */
+.content-title {
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Gaya untuk gambar */
+.content-image {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.content-image img {
+    max-width: 100%;
+    height: auto;
+    border: 3px solid #A8D5BA;
+    border-radius: 12px;
+}
+
+/* Gaya untuk teks konten */
+.content-text {
+    text-align: justify;
+    line-height: 1.6;
+    font-size: 1.1em;
+    color: #333;
+    padding: 0 10px;
+}
+
+/* Ukuran gambar puisi dan cerita pendek */
+.content-image img {
+    max-width: 30%; /* Sama seperti ukuran gambar pada halaman utama */
+    height: auto;
+    border: 3px solid #A8D5BA;
+    border-radius: 12px;
+    display: block;
+    margin: 0 auto; /* Menempatkan gambar di tengah */
+}
+
+
+/*Halaman About Me*/
+.about-me-container {
+    text-align: center; /* Judul About Me akan berada di tengah */
+    max-width: 900px;
+    margin: auto;
+    padding: 20px;
+}
+
+.about-me-container h1 {
+    font-size: 2em;
+    margin-bottom: 30px; /* Menambahkan jarak antara judul dan biodata */
+    text-align: center;
+}
+
+.about-me-details {
+    text-align: justify; /* Menjadikan teks rata kanan kiri */
+    margin-top: 20px;
+    font-size: 1.1em;
+}
+
+.about-me-details p {
+    margin-bottom: 15px;
+}
+
+.about-me-details a {
+    color: #78C2A5;
+    text-decoration: none;
+}
+
+.about-me-details a:hover {
+    color: #66B399;
+}
+
+/* Gambar pada Konten */
+.img-content {
+    max-width: 30%;
+    height: auto;
+    border: 3px solid #A8D5BA;
+    border-radius: 12px;
+    display: block;
+    margin-right: 20px;
+}
+
+/* Teks pada Halaman Konten */
+.content-text {
+    max-width: 50%;
+    text-align: left;
+}
+
+.content-text h1 {
+    font-size: 24px;
+    color: #333;
+}
+
+.content-text p {
+    font-size: 16px;
+    color: #333;
+    line-height: 1.5;
+}
+   
+
+/* Formulir di Halaman Feedback */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 500px;
+    width: 100%;
+}
+
+input[type="text"], input[type="email"], textarea {
+    padding: 8px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+textarea {
+    resize: vertical;
+}
+
+input[type="submit"] {
+    padding: 10px;
+    background-color: #78C2A5;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+input[type="submit"]:hover {
+    background-color: #66B399;
+}
+
+/* Footer */
+.container-footer {
+    text-align: center;
+    background-color: #A8D5BA;
+    color: #333;
+    padding: 20px;
+    font-size: 1.1em;
+    margin-top: auto;
+    height: 10vh;
+}
+
+.hi-footer {
+    font-size: 20px;
+    color: #FFFFFF;
+}
